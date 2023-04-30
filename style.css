@@ -23,6 +23,7 @@ body {
     width: min(var(--image-container-width), 40vw);
 }
 .logo-container {
+    padding: 10px 0 10px 0;
     position: absolute;
     top:236px;
     background-color: rgba(10, 10, 10, .5);
@@ -34,13 +35,15 @@ body {
 }
 /*Applied container to svg to control the dimensions of it*/
 .svg-container {
-    width: 150px;
+    /** The same as width:7vw and width-min:60px; */
+    width: max(7vw , 60px);
 }
 .logo {
     width: 100%;
 }
 .logo-header {
+    margin: 20px 0 20px 0;
     color: white;
-    font-size: clamp(2rem, 3vw + .5rem, 5rem);
+    font-size: clamp(2rem, 3vw + .8rem, 6rem);
     width: auto;
 }
