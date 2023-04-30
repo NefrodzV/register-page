@@ -1,0 +1,43 @@
+:root {
+    /*-----Width for large screen size 4k-----*/
+    --large-screen-width:3840px;
+    --image-container-width:1536px;
+    --sign-up-container-width:2304px;
+    /* ------------------------------------------- */
+
+    --default-screen-width-viewport:100vw;
+    --default-screen-height-viewport:100vh;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    /** The same as width: 3840px and max-width:100vw */
+    width: min(var(--default-screen-width-viewport), var(--large-screen-width)); 
+    height: var(--default-screen-height-viewport);
+    display: flex;
+}
+.image-container {
+    background-color: aqua;
+    width: min(var(--image-container-width), 40vw);
+}
+.logo-container {
+    background-color: rgba(10, 10, 10, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+/*Applied container to svg to control the dimensions of it*/
+.svg-container {
+    width: 150px;
+}
+.logo {
+    width: 100%;
+}
+.logo-header {
+    color: white;
+    font-size: clamp(1rem, 3vw + .5rem, 5rem);
+    width: auto;
+}
