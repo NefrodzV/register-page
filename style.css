@@ -1,15 +1,12 @@
 :root {
     --header-font-size:clamp(1.5rem, 3vw + .8rem, 6rem);
-    --default-screen-width-viewport:100vw;
-    --default-screen-height-viewport:100vh;
-    
 }
 body {
     margin: 0;
     padding: 0;
     /** The same as width: 3840px and max-width:100vw */
     width: 100vw;
-    height: var(--default-screen-height-viewport);
+    height: 100vh;
     display: flex;
 }
 .image-container {
