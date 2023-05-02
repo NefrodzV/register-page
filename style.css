@@ -1,10 +1,13 @@
 :root {
+    /**Says header font size should be min 1.5 rem,the optimal should be 3vw
+    plus a rem unit so that the user can see the change ifthey zoom in or out,
+    and that the maximum it can grow is 6rem */
     --header-font-size:clamp(1.5rem, 3vw + .8rem, 6rem);
+
 }
 body {
     margin: 0;
     padding: 0;
-    /** The same as width: 3840px and max-width:100vw */
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -24,7 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 1vw;
+    gap: 1vw; 
     
 }
 /*Applied container to svg to control the dimensions of it*/
@@ -32,9 +35,7 @@ body {
     /** The same as width:7vw and width-min:25px; */
     width: max(7vw , 25px);
 }
-.logo {
-    width: 100%;
-}
+
 .logo-header {
     margin: 20px 0 20px 0;
     color: white;
