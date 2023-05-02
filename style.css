@@ -1,3 +1,4 @@
+
 :root {
     /**Says header font size should be min 1.5 rem,the optimal should be 3vw
     plus a rem unit so that the user can see the change ifthey zoom in or out,
@@ -6,6 +7,7 @@
 
 }
 body {
+    background-color: rgb(26, 3, 26);
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -13,16 +15,19 @@ body {
     display: flex;
 }
 .image-container {
+    background-image: url("/images/stars.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     flex: 1; /*Sets the container width */
     position: relative;
-    background-color: aqua;
 }
 
 .logo-container {
     padding: 10px 0 10px 0;
     position: absolute;
     top:236px;
-    background-color: rgba(10, 10, 10, .5);
+    background-color: rgba(10, 10, 10, .7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +46,16 @@ body {
     color: white;
     font-size: var(--header-font-size);
     width: auto;
+}
+
+.credit, a {
+    color: white;
+}
+
+.credit {
+    text-align: center;
+    position: relative;
+    top: 90%;
 }
 .register-container {
     flex: 2;
