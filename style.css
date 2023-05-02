@@ -1,13 +1,19 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 :root {
     /**Says header font size should be min 1.5 rem,the optimal should be 3vw
     plus a rem unit so that the user can see the change ifthey zoom in or out,
     and that the maximum it can grow is 6rem */
-    --header-font-size:clamp(1.5rem, 3vw + .8rem, 6rem);
-
+    --logo-font-size:clamp(1.5rem, 2vw + .8rem, 6rem);
+    --title-font-size:clamp(1.2rem, 1vw + .5rem, 4rem);
+    --accent-color:#38285c;
+    --light-color:#5c54a4;
+    --prime-color:#4c408e;
 }
 body {
-    background-color: rgb(26, 3, 26);
+    color: antiquewhite;
+    font-family: 'Space Grotesk', sans-serif;;
+    background-color: #1a1c1d;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -27,7 +33,7 @@ body {
     padding: 10px 0 10px 0;
     position: absolute;
     top:236px;
-    background-color: rgba(10, 10, 10, .7);
+    background-color: rgba(10, 10, 10, .5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,13 +49,12 @@ body {
 
 .logo-header {
     margin: 20px 0 20px 0;
-    color: white;
-    font-size: var(--header-font-size);
+    font-size: var(--logo-font-size);
     width: auto;
 }
 
 .credit, a {
-    color: white;
+    color: antiquewhite
 }
 
 .credit {
@@ -62,5 +67,39 @@ body {
 }
 
 .title {
-    font-size: var(--header-font-size);
+    margin: 10% 0 0 5%;
+    font-size: var(--title-font-size);
+}
+
+form {
+    margin-top: 5%;
+    padding-left: 5%;
+}
+
+button {
+    margin: 5% 0 0 5%;
+}
+
+fieldset  {
+    margin-inline: 0;
+    padding-inline: 0;
+    padding-block: 0;
+    margin-block: 0;
+    min-inline-size: none;
+    border-width: 0px;
+    border-style: none;
+    border-color: rgb(192, 192, 192);
+    border-image: outside;
+}
+fieldset>legend {
+    font-size: var(--title-font-size);
+}
+ul {
+    list-style: none;
+    margin-block: 0;
+    margin-inline: 0;
+    padding-inline: 0;
+}
+li {
+    
 }
