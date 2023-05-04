@@ -6,8 +6,8 @@
     and that the maximum it can grow is 6rem */
     --logo-font-size:clamp(1.5rem, 4vw + .8rem, 7rem);
     --title-font-size:clamp(1.2rem, 1vw + .5rem, 2rem);
-    --label-font-size:clamp(1rem, 1vw +1.2rem,  3rem);
-    --default-font-size:clamp(1rem, 1vw +1.1rem,  2rem);
+    --label-font-size:clamp(0.3rem, 2vw + 1rem, 6rem);
+    --default-font-size:clamp(12px, 2vw, 2rem);
     --bg-color: #37143e;
     --accent-color:#38285c;
     --light-color:#594159;
@@ -122,7 +122,9 @@ li {
     flex-direction: column;
 }
 label {
-    font-size: var(--label-font-size);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: clamp(.5rem, 1vw, 2rem);
 }
 input {
     color:var(--text-color);
@@ -130,14 +132,15 @@ input {
     border-radius: 2px;
     background-color: var(--bg-color);
     height: max(1rem, 1vw + .5rem);
-    width:max(16vw, 6rem);
+    width:max(16vw, 5rem);
     font-size: var(--default-font-size);
 }
 button {
     border-radius: 5px;
-    font-size: var(--default-font-size);
+    font-size: clamp(12px, 2vw, 2rem);
     padding: 1%;
-    width: max(12vw, 8rem);
+    height: max(1rem, 2vw + 1.5rem);
+    width: max(12vw, 1 vw + 4rem);
     color: var(--text-color);
     background-color: var(--accent-color);
     border:none;
@@ -145,6 +148,7 @@ button {
 }
 
 h4 {
+    font-size: clamp(.6rem, 1vw, 1.5rem);
     margin-left: 5%;
 }
 
