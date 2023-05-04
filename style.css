@@ -132,7 +132,7 @@ input {
     border-radius: 2px;
     background-color: var(--bg-color);
     height: max(1rem, 1vw + .5rem);
-    width:max(16vw, 5rem);
+    width:max(20vw, 5rem);
     font-size: var(--default-font-size);
 }
 button {
