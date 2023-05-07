@@ -11,7 +11,7 @@
     --bg-color: #37143e;
     --accent-color:#38285c;
     --light-color:#594159;
-    --weird-color:#742e52;
+    --weird-color:#ff0285;
     --shadow-color: #1a1c1d;
     --text-color:bisque;
 }
@@ -135,6 +135,18 @@ input {
     width:max(20vw, 5rem);
     font-size: var(--default-font-size);
 }
+
+input:invalid {
+    border:2px dashed red ;
+}
+
+input:valid {
+    border-color: var(--light-color);
+}
+input:focus {
+    outline: none;
+    border-color: var(--weird-color);
+}
 button {
     border-radius: 5px;
     font-size: clamp(12px, 2vw, 2rem);
@@ -145,6 +157,10 @@ button {
     background-color: var(--accent-color);
     border:none;
     box-shadow: 4px 6px var(--shadow-color);
+}
+
+button:focus {
+    background-color: var(--);
 }
 
 h4 {
