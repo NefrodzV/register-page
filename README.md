@@ -1,4 +1,4 @@
-# register-page
+# Register Page
 ###### This project is a basic register page made with html and css. 
 
 #### This is a practice project for the following learned subjects: 
@@ -15,7 +15,7 @@
 * Responsive design with min, max and clamp functions.
 
 ### Image
-!(./images/register-page.png)
+![Register page image](images/register-page.png)
 
 
 
