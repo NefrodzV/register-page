@@ -7,7 +7,7 @@
 * Position elements in page with absolute, relative, static and sticky
 * Using background attributes for divs
 * Using svgs and how to resize them
-* Downloaded fonts
+* Online fonts
 * Using form, legend, fieldset and inputs and learning to style them.
 * Learning client side validation
 * Using httpbin to test the form

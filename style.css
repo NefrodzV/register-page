@@ -26,7 +26,7 @@ body {
     display: flex;
 }
 .image-container {
-    background-image: url("/images/stars.jpg");
+    background-image: url("images/stars.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
