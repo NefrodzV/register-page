@@ -15,5 +15,7 @@
 * Responsive design with min, max and clamp functions.
 
 ### Image
-(./images/register-page.png)
+!(./images/register-page.png)
+
+
 
